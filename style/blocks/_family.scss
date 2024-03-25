@@ -1,0 +1,85 @@
+.family {
+
+&__container {
+    display: flex;
+    position: relative;
+    margin: 0 0 0 9%;
+    padding-top: 3%;
+}
+&__text {
+    width: 45%;
+}
+&__picture {
+    position: relative;
+    width: 55%;
+    background-color: $pink1;
+}
+&__img1 {
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+}
+&__img2{
+    position: absolute;
+    right: 75%;
+    width: 20vw;
+}
+&__img3 {
+    position: absolute;
+    top: 30%;
+    right: 1%;
+    width: 20vw;
+}
+&__buttons {
+    @include flex-things;
+    gap: 5%;
+    margin-top: 5%  
+}
+&__button1 {
+    @extend %button1;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: $bold;
+}
+&__button2 {
+    @extend %button2;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: $bold;
+}
+h1 {
+    font-size: 63px;
+    font-weight: $megabold;
+    margin: 5% 15% 3% 0;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+h2 {
+    font-size: 16px;
+    margin: 0 30% 0 0;
+    font-weight: $megabold;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 950px) {
+    .family__container {
+        margin-left: 0;
+    }
+    .family__picture {
+        display: none;
+    }
+    .family__text {
+        text-align: center;
+        width: 100%;
+        h1 {
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+        h2 {
+        margin-right: 10%;  
+        margin-left: 10%;  
+        }
+    }
+    .family__buttons {
+       justify-content: center;
+    }
+}
+}

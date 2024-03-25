@@ -1,0 +1,29 @@
+.partners {
+    background-color: $pink2;
+    padding-top: 3%;
+
+&__text {
+    h1 {
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 23px;
+    color: $gray1;
+    text-align: center;
+    
+    
+}
+}
+&__container {
+    background-color: $pink2;
+    padding: 2% 5% 5% 9%;
+    display: grid;
+    column-gap: 10%;
+    grid-template: 1fr / repeat(4, 1fr);
+}
+@media screen and (max-width: 1100px) {
+   .partners__container {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    column-gap: 40%;
+}
+}
+}

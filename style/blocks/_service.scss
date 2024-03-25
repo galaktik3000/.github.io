@@ -1,0 +1,32 @@
+.service {
+    background-color: $pink2;
+    clear: both;
+    @include header-things-dop;
+
+&__text {
+    @include header-things;
+}
+&__container {
+    @include grid-things1;
+    column-gap: 5%;
+    padding-bottom: 3%;
+}
+&__img1 {
+    width: 100%;
+}
+&__info {
+    display: flex;
+    gap: 18%;
+    p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    color: $gray1;
+    font-weight: $bold;
+}
+}
+@media screen and (max-width: 1000px) {
+    .service__container {
+     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+}
+}
